@@ -29,7 +29,6 @@ function PageLoader() {
 
 export default function App() {
   return (
-    <AppProvider>
       <BrowserRouter>
         <Toast />
         <Suspense fallback={<PageLoader />}>
@@ -78,6 +77,5 @@ export default function App() {
           </Routes>
         </Suspense>
       </BrowserRouter>
-    </AppProvider>
   )
 }
