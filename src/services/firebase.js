@@ -4,12 +4,12 @@ import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyA6ODQ41XuVL8M4OfDJTpZE7E-7ZCBjkrw", // Your previous key was missing a character!
-  authDomain: "studymate-cd172.firebaseapp.com",
-  projectId: "studymate-cd172",
-  storageBucket: "studymate-cd172.appspot.com",
-  messagingSenderId: "39288677956",
-  appId: "1:39288677956:web:b9872beb70bfc0874e3e11"
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID,
 };
 
 const app = initializeApp(firebaseConfig);
